@@ -90,7 +90,7 @@ body {
 	color:#888888;
 	margin:0;
 }
-h2{
+h1,h2{
 	font-size:38px;
 	color:#222222;
 	font-family:'Dosis';
@@ -167,10 +167,10 @@ p{
 	/*margin:0px;*/
 	}
 	
-.nav ul li:last-child{
+/* .nav ul li:last-child{
 	margin:0 0 0 23px;
 	}
-	
+	 */
 .nav ul li a{
 	display:block;
 	font-size:14px;
@@ -334,7 +334,7 @@ a.learn_more2:hover{
 .service_icon i{
 	color: #fff;
     font-size: 40px;
-    margin-top: 0;
+    margin-top: 7px;
     position: relative;
     top: 14px;
     z-index: 20;
@@ -1509,10 +1509,10 @@ img {
 		margin-bottom:40px;
 	}
 
-	.project-section-title h1 {
+	/* .project-section-title h1 {
 		margin-bottom:5px!important;
 		letter-spacing:1px;
-	}		
+	}		 */
 
 	.project-page {
 		background-color:#FFF;
