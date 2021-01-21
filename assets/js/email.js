@@ -13,9 +13,9 @@ function submitForm(e) {
 function sendEmail(name, email, message) {
   Email.send({
     Host: "smtp.gmail.com",
-    Username: "",
+    Username: "addepesh@gmail.com",
     To: "deepeshadhikari@gmail.com",
-    From: "",
+    From: "addepesh@gmail.com",
     Subject: `${name} sent you a message`,
     Body: `Name: ${name} <br/> Email: ${email} <br/> Message:${message}`
   }).then(message => alert("mail successfully sent"));

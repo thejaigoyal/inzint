@@ -5,9 +5,29 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Contact - Eterna Bootstrap Template</title>
+    
+
+  <title>Contact - Eterna Bootstrap Template
+
+  </title>
   <meta content="" name="description">
   <meta content="" name="keywords">
+
+
+
+
+
+
+  <scripttype="text/javascript"src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+  <scripttype="text/javascript">
+  (function() {
+  emailjs.init("user_vM8CHeTQgspDyLCx1ueGK");
+  })();
+  </script>
+
+
+
+
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -23,10 +43,12 @@
   <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
   <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
   <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  
  
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+
 
   <!-- =======================================================
   * Template Name: Eterna - v2.2.0
@@ -159,11 +181,11 @@
             <form class="contact-form" method="POST" >
               <div class="form-row">
                 <div class="col form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <input type="text" name="name" class="form-control" id="from-name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                   <div class="validate"></div>
                 </div>
                 <div class="col form-group">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                  <input type="email" class="form-control" name="email" id="from-email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
                   <div class="validate"></div>
                 </div>
               </div>
@@ -172,7 +194,7 @@
                 <div class="validate"></div>
               </div>
               <div class="form-group">
-                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                <textarea class="form-control" name="message" id="msg" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
                 <div class="validate"></div>
               </div>
               <!-- <div class="mb-3">
@@ -180,7 +202,7 @@
                 <div class="error-message"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div> -->
-              <div class="text-center"><button class="btn btn-Success" type="submit" >submit</button></div>
+              <div class="text-center"><button onclick="sendMail()" class="btn btn-Success" type="submit" >submit</button></div>
             </form>
           </div>
 
@@ -371,12 +393,12 @@
   <script src="assets/vendor/counterup/counterup.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/venobox/venobox.min.js"></script> 
-  <script src=" https://smtpjs.com/v3/smtp.js" ></script>
+  <script src="./email.js"></script>
 
   <!-- Template Main JS File -->
-  <script src="./assets/js/email.js"></script>
 
   <script src="assets/js/main.js"></script>
+  
 
 
 </body>
