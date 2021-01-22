@@ -5,7 +5,7 @@ function sendMail(params) {
     message: document.getElementById("msg").value
   };
   emailjs
-    .send(service_d4lm2cn, template_ftnuzpd, tempParams)
+    .send("service_d4lm2cn", "template_ftnuzpd", tempParams)
     .then(function (res) {
       console.log("sucess", res.status);
     });
