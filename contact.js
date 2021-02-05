@@ -57,19 +57,19 @@ function addPost(e) {
   fetch("https://ykaxiwqnqb.execute-api.us-east-1.amazonaws.com/dev/contact", {
     method: "POST",
     headers: {
-      Accept: "application/json, text/plain",
-      "Content-type": "application/json"
+      "Access-Control-Allow-Origin": "*",
+      "Content-Type": "application/json",
     },
     body: JSON.stringify({
       name: name,
       email: email,
       subject: subject,
-      message: message
-    })
+      message: message,
+    }),
   })
-    .then(res => res.json())
-    .then(data => console.log(data))
-    .catch(rejected => {
+    .then((res) => res.json())
+    .then((data) => console.log(data))
+    .catch((rejected) => {
       console.log(rejected);
     });
 }
