@@ -7,8 +7,7 @@
 
     
 
-  <title>Inzint
-  </title>
+
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -24,6 +23,7 @@
   <!-- Favicons -->
   <link href="./assets/img/logob.png"  rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <title> Talented software professionals for offshore development - Inzint </title>
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -170,7 +170,7 @@
               </div>
     
               <div class="col-lg-6">
-                <form method="post" role="form" class="php-email-form">
+                <form action="./contact.html" method="POST" id="addPost" class="php-email-form">
                   <div class="form-row">
                     <div class="col form-group">
                       <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
@@ -186,7 +186,7 @@
                     <div class="validate"></div>
                   </div>
                   <div class="form-group">
-                    <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                    <textarea class="form-control" name="message" rows="5" data-rule="required" id="message" data-msg="Please write something for us" placeholder="Message"></textarea>
                     <div class="validate"></div>
                   </div>
                   <div class="mb-3">
@@ -194,10 +194,12 @@
                     <div class="error-message"></div>
                     <div class="sent-message">Your message has been sent. Thank you!</div>
                   </div>
-                  <div class="text-center"><button type="submit">Send Message</button></div>
+                  <div class="text-center"><button id="myBtn" type="submit" value="submit">Send Message</button></div>
+
                 </form>
               </div>
-    
+            
+              
             </div>
     
           </div>
@@ -492,6 +494,7 @@
   <script src="assets/vendor/counterup/counterup.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/venobox/venobox.min.js"></script> 
+  <script src="./contact.js"></script>
 
   <!-- Template Main JS File -->
 
