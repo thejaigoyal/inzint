@@ -59,18 +59,18 @@ function addPost(e) {
     headers: {
       "Access-Control-Allow-Origin": "*",
       "Access-Control-Allow-Headers": "*",
-      "Content-Type": "application/json",
+      "Content-Type": "application/json"
     },
     body: JSON.stringify({
       name: name,
       email: email,
       subject: subject,
-      message: message,
-    }),
+      message: message
+    })
   })
-    .then((res) => res.json())
-    .then((data) => console.log(data))
-    .catch((rejected) => {
+    .then(res => res.json())
+    .then(data => console.log(data))
+    .catch(rejected => {
       console.log(rejected);
     });
 }
