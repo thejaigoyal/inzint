@@ -1,0 +1,41 @@
+<div class="container d-flex">
+
+    <div class="logo mr-auto">
+        <h1 class="text-light"> <a href="/"><img alt="logo" style="width: 90px;" src="./assets/img/logob.png"
+              alt="logo"></a> <span></span></a></h1>
+
+      </div>
+
+    <nav class="nav-menu d-none d-lg-block">
+        <ul id="irp-menu-item">
+            <li><a href="/">Home</a></li>
+
+            <li class="drop-down"><a href="#">About</a>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="team.html">Team</a></li>
+                </ul>
+            </li>
+
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="careers.html">Careers</a></li>
+
+        </ul>
+    </nav><!-- .nav-menu -->
+
+    <script>
+        $(document).ready(function ($) {
+            var url = window.location.href;
+            var activePage = url;
+            $('#irp-menu-item a').each(function () {
+                var linkPage = this.href;
+
+                if (activePage == linkPage) {
+                    $(this).closest("li").addClass("active");
+                }
+            });
+        });
+    </script>
+
+</div>
