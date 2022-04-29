@@ -539,6 +539,8 @@ h6 {
 
 @media (min-width: 1024px) {
   #hero p {
+    font-weight: 600;
+    color: white;
     width: 50%;
   }
   #hero .carousel-control-prev,
